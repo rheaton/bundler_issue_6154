@@ -39,7 +39,7 @@ ENV BUNDLE_APP_CONFIG $GEM_HOME
 
 RUN gem update --system 2.6.14
 
-RUN gem install bundler -v 1.16.1 && \
+RUN gem install bundler -v 1.15.3 && \
 	  bundle config --global path "$GEM_HOME" && \
 	  bundle config --global bin "$GEM_HOME/bin"
 
